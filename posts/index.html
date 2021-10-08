@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.88.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+      
+    
+    
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/posts/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/firstpost/" class="link black dim">
+        Firstpost
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      整个配置过程的流程可大致分为两个主要内容。 1.注册github（Easy Peasy） 2.安装hugo 2.1 下载与安装 2.1.1 软件的下载与安装 可以选择从官网利用下载器下载，但是我选择的是从github中的下载链接下载的，其中出了一个小问题，由于我第一次安装的hugo不具备扩展包，这为之后遇到的困难埋下了伏笔，后在老师和同学的指导下，下载了带有扩展包版本的hugo，安装时对原hugo进行覆盖，最终解决了问题。 2.1.2 确认hugo安装成功 在cmd中输入hugo version，如果给出版本信息与系统时间等信息，说明hugo安装完成。 2.2 创建新站点 使用hugo new site blog命令在文件夹内创建一个blog文件夹，此文件夹为后续操作的基础。 2.3 安装主题 2.3.1 下载 通过链接可以转到github，上面有许多的主题，我前后下载过三个主题，但有两个压缩包是损坏的，原因不明。 2.3.2 将压缩包解压后，去掉无用的名称（如“master”等等），将解压后的文件夹复制到blog文件夹下的themes中，最后修改config.toml实现。 3.启动服务器（这一步是我碰到的难点） 一开始在输入“hugo server”时，cmd会报错，说config.toml文件中的第X行第X列出现错误，由于当时并没有看懂cmd提示的错误，所以不知道错误出在哪里，我一开始以为是因为我在错误的文件夹执行了目标指令，所以不断地尝试在所有hugo目录下执行目标指令，结果都在报错。后来求助于老师和同学，在老师的检查下发现在config.toml文件中该处并未出现问题，一位碰到同样问题并已经解决的同学提示我，让我去下载带有扩展包的hugo，下载好后，老师提示我使用覆盖的方法把原hugo覆盖安装，在安装成功后，重新运行代码，确实奏效了，cmd返回了不同的错误提示，说明加入扩展包后解决了无扩展包情况下无法解决的问题。老师继续帮助我检查config.toml文件，发现一处由我自己编写的转译，经老师检查后，提议我删除转译部分，在删除后重新运行，输入“hugo server”后，服务器成功启动。 过程中老师还让我把主题中的“themes.toml”里的内容复制到blog文件夹下的&quot;config.toml&quot;中，原因是需要统一不同的配置选项。
+    </div>
+  </div>
+</div>
+</div>
+      
+    </section></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  My New Hugo Site 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
